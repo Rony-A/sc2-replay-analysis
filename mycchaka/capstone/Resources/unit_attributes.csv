@@ -1,0 +1,57 @@
+Unit,Mineral,Vespene,Supply,Build Time,Build From,Life,Shields,Energy,Armor,Race
+SCV,50,0,1,17,Command Center,45,0,0,0,Terran
+Marine,50,0,1,25,Barracks,45,0,0,0,Terran
+Marauder,100,25,2,30,Barracks,125,0,0,1,Terran
+Reaper,50,50,1,45,Barracks,60,0,0,0,Terran
+Ghost,200,100,2,40,Barracks,100,0,200,0,Terran
+Hellion,100,0,2,30,Factory,90,0,0,0,Terran
+Siege Tank,150,125,3,45,Factory,160,0,0,1,Terran
+Thor,300,200,6,60,Factory,400,0,0,1,Terran
+Viking,150,75,2,42,Starport,125,0,0,0,Terran
+Medivac,100,100,2,42,Starport,150,0,200,1,Terran
+Raven,100,200,2,60,Starport,140,0,200,1,Terran
+Banshee,150,100,3,60,Starport,140,0,200,0,Terran
+Battlecruiser,400,300,6,90,Starport,550,0,200,3,Terran
+Hellbat,100,0,2,30,Factory,135,0,0,0,Terran
+Widow Mine,75,25,2,40,Factory,90,0,0,0,Terran
+Liberator,150,150,3,60,Starport,180,0,0,0,Terran
+Cyclone,150,150,3,32,Factory,120,0,0,1,Terran
+Larva,0,0,0,11,Hatchery,25,0,0,0,Zerg
+Drone,50,0,1,17,Larva,40,0,0,0,Zerg
+Overlord,100,0,0,25,Larva,200,0,0,0,Zerg
+Zergling,50,0,1,24,Larva,35,0,0,0,Zerg
+Queen,150,0,2,50,Hatchery,175,0,200,1,Zerg
+Hydralisk,100,50,2,33,Larva,80,0,0,0,Zerg
+Baneling,25,25,0,20,Zergling,30,0,0,0,Zerg
+Overseer,50,50,0,17,Overlord,200,0,200,1,Zerg
+Roach,75,25,2,27,Larva,145,0,0,1,Zerg
+Infestor,100,150,2,50,Larva,90,0,200,0,Zerg
+Mutalisk,100,100,2,33,Larva,120,0,0,0,Zerg
+Corruptor,150,100,2,40,Larva,200,0,0,2,Zerg
+Nydus Worm,100,100,0,20,Nydus Network,200,0,0,1,Zerg
+Ultralisk,300,200,6,55,Larva,500,0,0,1,Zerg
+Brood Lord,150,150,2,34,Corruptor,225,0,0,1,Zerg
+Swarm Host,200,100,3,40,Larva,160,0,0,1,Zerg
+Viper,100,200,3,40,Larva,150,0,200,1,Zerg
+Ravager,25,75,3,9,Roach,120,0,0,1,Zerg
+Lurker,50,100,3,15,Hydralisk,200,0,0,1,Zerg
+Probe,50,0,1,17,Nexus,20,20,0,0,Protoss
+Zealot,100,0,2,38,Gateway,100,50,0,1,Protoss
+Stalker,125,50,2,42,Gateway,80,80,0,1,Protoss
+Sentry,50,100,2,37,Gateway,40,40,200,1,Protoss
+Observer,25,75,1,30,Robotics Facility,40,20,0,0,Protoss
+Immortal,250,100,4,55,Robotics Facility,200,100,0,1,Protoss
+Warp Prism,200,0,2,50,Robotics Facility,100,100,0,0,Protoss
+Colossus,300,200,6,75,Robotics Facility,200,150,0,1,Protoss
+Phoenix,150,100,2,35,Stargate,120,60,200,0,Protoss
+Void Ray,250,150,4,60,Stargate,150,100,0,0,Protoss
+High Templar,50,150,2,55,Gateway,40,40,200,0,Protoss
+Dark Templar,125,125,2,55,Gateway,40,80,0,1,Protoss
+Archon,250,250,4,12,Dark Templar or High Templar,10,350,0,0,Protoss
+Carrier,350,250,6,120,Stargate,250,150,0,2,Protoss
+Mothership,300,300,6,100,Mothership Core,350,350,200,2,Protoss
+Mothership Core,100,100,2,30,Nexus,130,60,200,1,Protoss
+Oracle,150,150,3,50,Stargate,100,60,200,0,Protoss
+Tempest,300,200,4,60,Stargate,300,150,0,2,Protoss
+Adept,100,25,2,38,Gateway,80,70,0,1,Protoss
+Disruptor,150,150,3,50,Robotics Facility,100,100,0,1,Protoss
