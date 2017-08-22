@@ -19,7 +19,7 @@ def common_markdown():
 
 #Print Lists in a pretty way
 
-def plist(iterable, col_num = 5, spacing = None, _chars_per_line = 79):
+def plist(iterable, col_num = 3, spacing = None, _chars_per_line = 98):
     '''Prints an iterable in a pretty way - python 3'''
     if spacing == None:
         spacing = int(_chars_per_line/col_num)
