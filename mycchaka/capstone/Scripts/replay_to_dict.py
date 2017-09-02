@@ -38,7 +38,7 @@ def to_dictPlayerStatsEvent(event):
             if all([ignore not in key for ignore in wish_to_ignore])}
 
 def to_dictUnitPositionsEvent(event):
-    return {'positions':{unit_update[0]:unit_update[1] for unit_update in event.positions},
+    return {'positions':{key.id:event.units[key] for key in event.units.keys()},
             'frame':event.frame,
             'second':event.second}
 
