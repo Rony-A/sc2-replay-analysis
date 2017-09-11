@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 #Essential modeling imports
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import cross_val_predict, cross_val_score
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from sklearn.preprocessing import MinMaxScaler, StandardScaler, QuantileTransformer
 
 #Configurations
 def common_configs():
@@ -34,13 +34,23 @@ def plist(iterable, col_num = 3, spacing = None, _chars_per_line = 98):
 #Scales DataFrame
 def scale_dataframe(df, method = 'StandardScaler', fit=True):
     if method == 'StandardScaler':
-        scaler = StandardScaler()
-        if fit: scaler.fit(df)
-        return pd.DataFrame(columns=df.columns,data=scaler.transform(df))
+        if fit: 
+            scaler = StandardScaler()
+            scaler.fit(df)
+        yield pd.DataFrame(columns=df.columns,data=scaler.transform(df))
+        
     elif method == 'MinMaxScaler':
-        scaler = MinMaxScaler()
-        if fit: scaler.fit(df)
-        return pd.DataFrame(columns=df.columns,data=scaler.transform(df))
+        if fit: 
+            scaler = MinMaxScaler()
+            scaler.fit(df)
+        yield pd.DataFrame(columns=df.columns,data=scaler.transform(df))
+        
+    elif method == 'QuantileTransformer':
+        if fit: 
+            scaler = QuantileTransformer(output_distribution='normal')
+            scaler.fit(df)
+        yield pd.DataFrame(columns=df.columns,data=scaler.transform(df))
+        
     elif method == 'Mixed':
         df_mixed = df.copy()
         binary = df.applymap(lambda x:
@@ -50,7 +60,7 @@ def scale_dataframe(df, method = 'StandardScaler', fit=True):
             std = df[col].std()
             xbar = df[col].std()
             df_mixed[col] = df[col].apply(lambda x:float(x-xbar)/std)
-        return df_mixed
+        yield df_mixed
 
 # Make a toggle for code visibility
 from IPython.core.display import HTML
