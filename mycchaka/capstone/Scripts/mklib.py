@@ -32,24 +32,24 @@ def plist(iterable, col_num = 3, spacing = None, _chars_per_line = 98):
         print()
 
 #Scales DataFrame
-def scale_dataframe(df, method = 'StandardScaler', fit=True):
+def scale_dataframe(df, method = 'StandardScaler', scaler=None):
     if method == 'StandardScaler':
-        if fit: 
+        if scaler is None:
             scaler = StandardScaler()
             scaler.fit(df)
-        yield pd.DataFrame(columns=df.columns,data=scaler.transform(df))
+        return pd.DataFrame(columns=df.columns,data=scaler.transform(df))
         
     elif method == 'MinMaxScaler':
-        if fit: 
+        if scaler is None:
             scaler = MinMaxScaler()
             scaler.fit(df)
-        yield pd.DataFrame(columns=df.columns,data=scaler.transform(df))
+        return pd.DataFrame(columns=df.columns,data=scaler.transform(df))
         
     elif method == 'QuantileTransformer':
-        if fit: 
+        if scaler is None:
             scaler = QuantileTransformer(output_distribution='normal')
             scaler.fit(df)
-        yield pd.DataFrame(columns=df.columns,data=scaler.transform(df))
+        return pd.DataFrame(columns=df.columns,data=scaler.transform(df))
         
     elif method == 'Mixed':
         df_mixed = df.copy()
@@ -60,7 +60,7 @@ def scale_dataframe(df, method = 'StandardScaler', fit=True):
             std = df[col].std()
             xbar = df[col].std()
             df_mixed[col] = df[col].apply(lambda x:float(x-xbar)/std)
-        yield df_mixed
+        return df_mixed
 
 # Make a toggle for code visibility
 from IPython.core.display import HTML
