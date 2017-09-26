@@ -43,6 +43,6 @@ When I started working with the .SC2Replay files the first challenge was accessi
 
 In particular, the getUnits() function allows for easy querying of the replay file by unit name, type, partial name (it checks if the input is a substring of the unit's name), time of death, time of birth, owner or race. It also has a robust handling of passing multiple conditions. Details and examples can be found in Appendix 3.
 
-I used this function to create a crude replay of games parsed by sc2reader.
+I used this function to create a crude replay of games parsed by sc2reader (details in Appendix 3).
 
-
+![Video using getUinits()](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Images/Video%20of%20Game%20Smooth.mov)
