@@ -3,6 +3,8 @@
 I recently completed the 12-week Data Science Immersive at General Assembly, London. For my final project I 
 analysed StarCraft 2 replay files and built a series of models that predict - with high accuracy - the winner of a match given the state of the game when player 1 or player 2 surrendered.
 
+![End Game States](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Images/Capstone%20Screenshots/Screen%20Shot%202017-09-13%20at%2011.49.42.png?raw=true)
+
 In doing this I built some interesting tools that others may find interesting, so feel free to look at the code 
 and adapt it as you want.
 
