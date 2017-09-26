@@ -45,4 +45,7 @@ In particular, the getUnits() function allows for easy querying of the replay fi
 
 I used this function to create a crude replay of games parsed by sc2reader (details in Appendix 3).
 
+
+![Video moments](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Images/Capstone%20Screenshots/Screen%20Shot%202017-09-13%20at%2012.34.19.png?raw=true)
+
 ![Video using getUinits()](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Images/Video%20of%20Game%20Smooth.mov)
