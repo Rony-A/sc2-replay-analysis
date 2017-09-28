@@ -1,7 +1,11 @@
 # Analysing StarCraft II replays
 
+Capstone: [StarCraft II replay analysis](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Starcraft%20II%20analysis.ipynb)
+
 I recently completed the 12-week Data Science Immersive at General Assembly, London. For my final project I 
 analysed StarCraft 2 replay files and built a series of models that predict - with high accuracy - the winner of a match given the state of the game when player 1 or player 2 surrendered.
+
+![End Game States](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Images/Capstone%20Screenshots/Screen%20Shot%202017-09-13%20at%2011.49.42.png?raw=true)
 
 In doing this I built some interesting tools that others may find interesting, so feel free to look at the code 
 and adapt it as you want.
@@ -43,6 +47,9 @@ When I started working with the .SC2Replay files the first challenge was accessi
 
 In particular, the getUnits() function allows for easy querying of the replay file by unit name, type, partial name (it checks if the input is a substring of the unit's name), time of death, time of birth, owner or race. It also has a robust handling of passing multiple conditions. Details and examples can be found in Appendix 3.
 
-I used this function to create a crude replay of games parsed by sc2reader.
+I used this function to create a crude replay of games parsed by sc2reader (details in Appendix 3).
 
 
+![Video moments](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Images/Capstone%20Screenshots/Screen%20Shot%202017-09-13%20at%2012.34.19.png?raw=true)
+
+![Video using getUinits()](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Images/Video%20of%20Game%20Smooth.mov)
