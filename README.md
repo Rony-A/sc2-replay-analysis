@@ -33,7 +33,7 @@ It expects an sc2reader.Replay object to be passed into it, and it outputs a dic
 
 ##### A 1-d representation of the game state
 
-The main challenge I faced in this project was translating the game state to a 1-dimentional array, such that I could tabulate the data with each row in the table representing a game state.
+The main challenge I faced in this project was translating the game state to a 1-dimensional array, such that I could tabulate the data with each row in the table representing a game state.
 
 Many features were readily available through data munging, but the spatial location of units and its significance was tackled using density-based clustering.
 
@@ -47,9 +47,8 @@ When I started working with the .SC2Replay files the first challenge was accessi
 
 In particular, the getUnits() function allows for easy querying of the replay file by unit name, type, partial name (it checks if the input is a substring of the unit's name), time of death, time of birth, owner or race. It also has a robust handling of passing multiple conditions. Details and examples can be found in Appendix 3.
 
-I used this function to create a crude replay of games parsed by sc2reader (details in Appendix 3).
-
+I used this function to create a crude replay of games parsed by sc2reader (details in Appendix 3). The interactive plot to display the game state at time t (controlled by a slider) does not render properly in GitHub, but a video of a game being visualized by the widget can be found ![here](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Images/Video%20of%20Game%20Smooth.mov). The function can also be adapted to give still frames of the game. Here is a match in 30 second intervals.
 
 ![Video moments](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Images/Capstone%20Screenshots/Screen%20Shot%202017-09-13%20at%2012.34.19.png?raw=true)
 
-![Video using getUinits()](https://github.com/mkleinbort/sc2-replay-analysis/blob/master/Images/Video%20of%20Game%20Smooth.mov)
+
